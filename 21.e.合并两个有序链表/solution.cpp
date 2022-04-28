@@ -37,24 +37,26 @@ public:
         }
     }
 
-    int main(int argc, char const *argv[])
-    {
-        ListNode* l1=buildNode({1,2,4},0);
-        ListNode* l2=buildNode({1,3,4},0);
-        ListNode* l3=Solution().mergeTwoLists(l1,l2);
-        while (l3)
-        {
-            std::cout<<l3->val;
-            l3=l3->next;
-        }
-        
-        return 0;
-    }
-    
     ListNode* buildNode(std::vector<int> arr , int i){
-        if(i>arr.size())
+        if(i>=arr.size())
             return nullptr;
 
         return new ListNode(arr[i],buildNode(arr,i+1));
     }
 };
+
+
+int main(int argc, char const *argv[])
+{   
+    auto s = Solution();
+    ListNode* l1=s.buildNode({1,2,4},0);
+    ListNode* l2=s.buildNode({1,3,4},0);
+    ListNode* l3=s.mergeTwoLists(l1,l2);
+    while (l3)
+    {
+        std::cout<<l3->val;
+        l3=l3->next;
+    }
+    return 0;
+}
+    
