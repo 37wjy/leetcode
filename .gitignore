@@ -1,19 +1,40 @@
-*
+#######
 
-!*.md
-!*.jpeg
-!*.jpg
-!*.png
+.DS_Store
 
-!*.c
-!*.cpp
-!*.cxx
-!*.cc
-!*.h
-!*.ipynb
-!*.js
-!*.cs
+####### editor
+.vscode/
 
+####### c++
+# Prerequisites
+*.d
 
-!Makefile
-!.gitignore
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
