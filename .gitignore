@@ -4,6 +4,8 @@
 
 ####### editor
 .vscode/
+**.dSYM
+[Ss]olution
 
 ####### c++
 # Prerequisites
